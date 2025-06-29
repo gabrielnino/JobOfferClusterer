@@ -1,0 +1,31 @@
+2025-06-29 10:14:58,446 - INFO - Starting job offer clustering script
+2025-06-29 10:14:58,448 - INFO - Use pytorch device_name: cpu
+2025-06-29 10:14:58,449 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-06-29 10:15:00,558 - INFO - JobOfferClusterer initialized with embedding model
+2025-06-29 10:15:00,558 - INFO - Starting job offer processing pipeline
+2025-06-29 10:15:00,559 - INFO - Loading data from processed_parse_jobs.json
+2025-06-29 10:15:00,559 - INFO - Successfully loaded 4 job offers
+2025-06-29 10:15:00,561 - INFO - Starting data preprocessing
+2025-06-29 10:15:03,052 - INFO - Data preprocessing completed
+2025-06-29 10:15:03,052 - INFO - Generating embeddings for 4 texts
+2025-06-29 10:15:03,218 - INFO - Embeddings generated successfully
+2025-06-29 10:15:03,218 - INFO - Starting clustering with DBSCAN
+2025-06-29 10:15:03,220 - INFO - Clustering completed. Found 1 clusters
+2025-06-29 10:15:03,221 - INFO - Cluster distribution: {0: 4}
+2025-06-29 10:15:03,222 - INFO - Generating cluster summaries
+2025-06-29 10:15:03,224 - INFO - Extracting top 10 keywords from 4 texts
+2025-06-29 10:15:03,227 - INFO - Generated summaries for 1 clusters
+2025-06-29 10:15:03,227 - INFO - Creating t-SNE visualization
+2025-06-29 10:15:03,227 - INFO - Running t-SNE dimensionality reduction with perplexity=3...
+2025-06-29 10:15:08,282 - INFO - Cluster visualization saved as cluster_visualization_20250629_101507.png
+2025-06-29 10:15:28,153 - INFO - Processing pipeline completed successfully
+2025-06-29 10:15:28,154 - INFO - Cluster Summary:
+2025-06-29 10:15:28,154 - INFO - 
+Cluster 0:
+2025-06-29 10:15:28,154 - INFO -   Offers: 4
+2025-06-29 10:15:28,154 - INFO -   Top Keywords: application, aspnet, developer, development, environment, experience, net, senior, technology, web
+2025-06-29 10:15:28,154 - INFO -   Example Titles: ['Senior Software Developer experienced in .NET & Azure Cloud development in C#', 'Intermediate C# Developer', 'Senior Fullstack .NET Developer']
+2025-06-29 10:15:28,154 - INFO - 
+Job to Cluster Mapping:
+2025-06-29 10:15:28,154 - INFO - {'4248904997': np.int64(0), '4256084193': np.int64(0), '4188413939': np.int64(0), '4253874873': np.int64(0)}
+2025-06-29 10:15:28,154 - INFO - Script execution completed
